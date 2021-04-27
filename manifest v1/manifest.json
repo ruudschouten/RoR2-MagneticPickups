@@ -1,11 +1,11 @@
 {
-  "name": "Magnetic Pickups",
-  "version_number": "1",
+  "name": "MagneticPickups",
+  "version_number": "1.0.0",
   "website_url": "https://github.com/ruudschouten/RoR2-MagneticPickups",
   "description": "Changes pickups from Monsters Tooth, Bandolier, and Ghors Tome to automatically fly towards you in a specified range.",
   "dependencies": [
       "bbepis-BepInExPack-5.4.9",
       "tristanmcpherson-R2API-3.0.30",
-      "RiskOfThunder-HookGenPatcher-1.2.1"
+      "RiskofThunder-HookGenPatcher-1.2.1"
   ]
 }
