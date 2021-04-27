@@ -1,0 +1,21 @@
+{
+  "ManifestVersion": 2,
+  "AuthorName": "Blappole",
+  "Name": "Blappole-Magnetic Pickups",
+  "DisplayName": "Magnetic Pickups",
+  "Version": "1.0.0",
+  "Licence": "",
+  "WebsiteURL": "",
+  "Description": "",
+  "GameVersion": "N/A",
+  "Dependencies": [],
+  "OptionalDependencies": [],
+  "Incompatibilities": [],
+  "NetworkMode": "both",
+  "PackageType": "mod",
+  "InstallMode": "managed",
+  "Loaders": [
+      "bepinex", "r2api"
+  ],
+  "ExtraData": {}
+}
