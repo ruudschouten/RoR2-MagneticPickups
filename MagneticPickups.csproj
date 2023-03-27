@@ -4,63 +4,71 @@
     <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup>
+		<RoR2Path>C:\Program Files (x86)\Steam\steamapps\common\Risk of Rain 2</RoR2Path>
+    <BepInExPath>C:\Users\bradl\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\yob\BepInEx</BepInExPath>
+	</PropertyGroup>
+
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\libs\bepin\0Harmony.dll</HintPath>
+      <HintPath>$(BepInExPath)\core\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="0Harmony20">
-      <HintPath>..\libs\bepin\0Harmony20.dll</HintPath>
+      <HintPath>$(BepInExPath)\core\0Harmony20.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\ClassicMonsterTooth\ClassicMonsterTooth\ClassicMonsterTooth\libs\ror2\Assembly-CSharp.dll</HintPath>
+      <HintPath>$(RoR2Path)\Risk of Rain 2_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RoR2">
+      <HintPath>$(RoR2Path)\Risk of Rain 2_Data\Managed\RoR2.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx">
-      <HintPath>..\libs\bepin\BepInEx.dll</HintPath>
+      <HintPath>$(BepInExPath)\core\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx.Harmony">
-      <HintPath>..\libs\bepin\BepInEx.Harmony.dll</HintPath>
+      <HintPath>$(BepInExPath)\core\BepInEx.Harmony.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx.Preloader">
-      <HintPath>..\libs\bepin\BepInEx.Preloader.dll</HintPath>
+      <HintPath>$(BepInExPath)\core\BepInEx.Preloader.dll</HintPath>
     </Reference>
     <Reference Include="HarmonyXInterop">
-      <HintPath>..\libs\bepin\HarmonyXInterop.dll</HintPath>
+      <HintPath>$(BepInExPath)\core\HarmonyXInterop.dll</HintPath>
     </Reference>
     <Reference Include="MMHOOK_Assembly-CSharp">
-      <HintPath>..\ClassicMonsterTooth\ClassicMonsterTooth\ClassicMonsterTooth\libs\MMHOOK_Assembly-CSharp.dll</HintPath>
+      <HintPath>$(BepInExPath)\plugins\RiskOfThunder-HookGenPatcher\MMHOOK\MMHOOK_Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
-      <HintPath>..\libs\bepin\Mono.Cecil.dll</HintPath>
+      <HintPath>$(BepInExPath)\core\Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Mdb">
-      <HintPath>..\libs\bepin\Mono.Cecil.Mdb.dll</HintPath>
+      <HintPath>$(BepInExPath)\core\Mono.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Pdb">
-      <HintPath>..\libs\bepin\Mono.Cecil.Pdb.dll</HintPath>
+      <HintPath>$(BepInExPath)\core\Mono.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Rocks">
-      <HintPath>..\libs\bepin\Mono.Cecil.Rocks.dll</HintPath>
+      <HintPath>$(BepInExPath)\core\Mono.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="MonoMod.RuntimeDetour">
-      <HintPath>..\libs\bepin\MonoMod.RuntimeDetour.dll</HintPath>
+      <HintPath>$(BepInExPath)\core\MonoMod.RuntimeDetour.dll</HintPath>
     </Reference>
     <Reference Include="MonoMod.Utils">
-      <HintPath>..\libs\bepin\MonoMod.Utils.dll</HintPath>
+      <HintPath>$(BepInExPath)\core\MonoMod.Utils.dll</HintPath>
     </Reference>
     <Reference Include="R2API">
-      <HintPath>..\ClassicMonsterTooth\ClassicMonsterTooth\ClassicMonsterTooth\libs\R2API.dll</HintPath>
+      <HintPath>$(BepInExPath)\plugins\tristanmcpherson-R2API\R2API.Legacy\R2API.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\ClassicMonsterTooth\ClassicMonsterTooth\ClassicMonsterTooth\libs\ror2\UnityEngine.dll</HintPath>
+      <HintPath>$(RoR2Path)\Risk of Rain 2_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\ClassicMonsterTooth\ClassicMonsterTooth\ClassicMonsterTooth\libs\ror2\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>$(RoR2Path)\Risk of Rain 2_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>..\ClassicMonsterTooth\ClassicMonsterTooth\ClassicMonsterTooth\libs\ror2\UnityEngine.Networking.dll</HintPath>
+    <Reference Include="com.unity.multiplayer-hlapi.Runtime">
+      <HintPath>$(RoR2Path)\Risk of Rain 2_Data\Managed\com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>..\ClassicMonsterTooth\ClassicMonsterTooth\ClassicMonsterTooth\libs\ror2\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>$(RoR2Path)\Risk of Rain 2_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
   </ItemGroup>
 
