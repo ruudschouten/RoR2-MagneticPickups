@@ -1,13 +1,13 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
+using System.Collections.ObjectModel;
 using RoR2;
 using UnityEngine;
-using System.Collections.ObjectModel;
 
 namespace MagneticPickups
 {
     [BepInDependency("com.bepis.r2api")]
-    [BepInPlugin("com.blappole.magneticpickups", "Magnetic Pickups", "1.1.0")]
+    [BepInPlugin("com.blappole.magneticpickups", "Magnetic Pickups", "1.2.0")]
     public class MagneticPickups : BaseUnityPlugin
     {
         public static ConfigEntry<float> PickupSpeed { get; set; }

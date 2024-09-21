@@ -1,3 +1,6 @@
+**1.2.0**
+
+- Recompiled with changes to BepInEx and RoR2API, and Seekers of the Storm
 
 **1.1.0**
 
